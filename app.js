@@ -15,7 +15,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static(__dirname + '/public'));
 
-mongoose.connect('mongodb+srv://lalitkumar-admin:Lalit%40%23259700@cluster0.ohav78z.mongodb.net/todolistDB?retryWrites=true&w=majority', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://lalitkumar-admin:password@cluster0.ohav78z.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true});
+
 const iteamSchema = {
   name: String
 }
